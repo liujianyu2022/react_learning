@@ -16,6 +16,10 @@ import Detail_Params from "./pages/About/Detail_Params"
 import Detail_Search from "./pages/About/Detail_Search"
 import Detail_State from "./pages/About/Detail_State"
 
+
+import { Ajax_Class } from "./components/Ajax/Ajax";
+
+
 const App = ()=>{
   const elements = useRoutes([    //路由表的写法
     {
@@ -77,6 +81,9 @@ const App = ()=>{
       </Routes> */}
 
       {elements}  
+
+      <hr></hr>
+      <Ajax_Class></Ajax_Class>
     </div>
   )
 }
